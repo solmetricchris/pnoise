@@ -1,11 +1,10 @@
-import org.junit.Test;
-
 import java.util.Random;
+
 
 /**
  * Created by ruedi on 06/04/15.
  */
-public class StupidInternetBench {
+public class Test {
 
         public static class Vec2 {
         public Vec2(double x, double y) {
@@ -105,8 +104,8 @@ public class StupidInternetBench {
     }
 
     static char[] symbols = { ' ', '░', '▒', '▓', '█', '█' };
-
-    public StupidInternetBench() {
+    
+    public Test() {
         Noise2DContext n2d = new Noise2DContext((int) System.currentTimeMillis());
         double[] pixels = new double[256 * 256];
 
@@ -131,7 +130,7 @@ public class StupidInternetBench {
     public static void main(String[] args) {
         while( true ) {
             long now = System.currentTimeMillis();
-            new StupidInternetBench();
+            new Test();
             System.out.println("time:"+(System.currentTimeMillis()-now));
         }
     }
